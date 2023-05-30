@@ -1,0 +1,36 @@
+<div class = "login-container">
+    <img class ="film" src="assets/images/film.png" alt ="">
+    <div class ="logo">Moviemeter</div>
+        <div class = "desc">
+            MovieMeter is an intuitive and user-friendly app that allows you to rate the movies you watch. 
+            With MovieMeter, you can easily log and rate your movie experiences, 
+            providing personalized ratings and reviews.
+            Share your thoughts with friends and discover new films through our vibrant community. 
+            Whether you're a casual moviegoer or a dedicated cinephile,
+             MovieMeter is the perfect companion to enhance your movie-watching journey.
+        </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for ="uname">Username</label>
+            <input 
+            type ="text" 
+            name = "uname" 
+            class="form-control" 
+            [(ngModel)] ="username"
+            />
+        </div>
+        <div class="form-group">
+            <label for ="pword">Password</label>
+            <input 
+            type ="password" 
+            name = "pword" 
+            class="form-control" 
+            [(ngModel)] ="password"
+            />
+        </div>
+        <div class="btn-container">
+            <div class ="error">{{errorMsg}}</div>
+            <button class = "btn-btn dark" (click) = "login()">Login</button>
+        </div>
+    </div>
+</div>>
